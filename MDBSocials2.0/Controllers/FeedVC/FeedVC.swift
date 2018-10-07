@@ -9,7 +9,8 @@ import Firebase
 class FeedVC: UIViewController {
     
     var createPostButton: UIButton!
-    
+    var mainTabBarVC : TabVC!
+
     var posts: [Post] = []
     var postSelected : Post!
 
@@ -17,6 +18,8 @@ class FeedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = Constants.white
         
         setupCreatePostButton()
         setupTableView()
@@ -32,6 +35,6 @@ class FeedVC: UIViewController {
     }
     
     @objc func handleCreatePost() {
-        performSegue(withIdentifier: "toPostCreatorVC", sender: self)
+        mainTabBarVC.performSegue(withIdentifier: "toPostCreatorVC", sender: mainTabBarVC)
     }
 }

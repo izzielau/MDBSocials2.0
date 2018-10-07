@@ -66,7 +66,7 @@ class LoginVC: UIViewController {
                 self.ourUserID = user?.user.uid
             }
         })
-        self.performSegue(withIdentifier: "fromLToFeedVC", sender: self)
+        self.performSegue(withIdentifier: "fromLoginToTab", sender: self)
 
     }
     

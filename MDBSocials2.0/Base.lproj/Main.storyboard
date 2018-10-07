@@ -21,8 +21,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="qn8-eI-sIx"/>
                     <connections>
-                        <segue destination="Cge-At-82V" kind="show" identifier="fromLToFeedVC" animates="NO" id="zRI-hl-yMl"/>
                         <segue destination="XZ3-Xk-on4" kind="show" identifier="toSignupVC" id="qOE-So-XCm"/>
+                        <segue destination="jDa-37-IZY" kind="show" identifier="fromLoginToTab" id="nra-yN-Uog"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -40,8 +40,8 @@
                         <viewLayoutGuide key="safeArea" id="HGp-y8-tUP"/>
                     </view>
                     <connections>
-                        <segue destination="Cge-At-82V" kind="show" identifier="fromSToFeedVC" animates="NO" id="Vx0-3T-onG"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toLoginVC" id="Z54-An-HdC"/>
+                        <segue destination="jDa-37-IZY" kind="show" identifier="fromSignupToTab" id="CAa-is-CDc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vUv-Dv-gFl" sceneMemberID="firstResponder"/>
@@ -60,13 +60,43 @@
                     </view>
                     <navigationItem key="navigationItem" id="YDN-Rd-fst"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-                    <connections>
-                        <segue destination="20D-Rp-Ufh" kind="show" identifier="toPostCreatorVC" id="ht7-AX-3BI"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hR2-ox-2AY" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="545" y="365"/>
+            <point key="canvasLocation" x="609" y="-359"/>
+        </scene>
+        <!--TabVC-->
+        <scene sceneID="zkH-Pw-Wsx">
+            <objects>
+                <viewController id="jDa-37-IZY" customClass="TabVC" customModule="MDBSocials" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mjk-i4-dDM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="DvW-eg-95t"/>
+                    </view>
+                    <connections>
+                        <segue destination="20D-Rp-Ufh" kind="show" identifier="toPostCreatorVC" id="8cm-ay-J5p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rFe-0e-Fge" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="365"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ncO-s4-urN">
+            <objects>
+                <viewController id="4pA-X3-Jh2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7vw-jq-x2v">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UGA-Wx-wze"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vz-Xu-yOY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="609" y="1085"/>
         </scene>
         <!--Create SocialVC-->
         <scene sceneID="zbL-Zf-5Fe">
@@ -108,7 +138,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PFP-BH-32X"/>
+        <segue reference="nra-yN-Uog"/>
         <segue reference="Z54-An-HdC"/>
     </inferredMetricsTieBreakers>
 </document>

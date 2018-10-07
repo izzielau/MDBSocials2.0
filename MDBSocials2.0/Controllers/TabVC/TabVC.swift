@@ -19,11 +19,11 @@ class TabVC: UITabBarController {
         
         let tabOne = FeedVC()
         let image1 = UIImage(named: "feed")
-        tabOne.tabBarItem = UITabBarItem(title: "Feed", image: image1, tag: 0)
+        tabOne.tabBarItem = UITabBarItem(title: "Feed", image: nil, tag: 0)
         
         let tabTwo = EventsVC()
         let image2 = UIImage(named: "events")
-        tabTwo.tabBarItem = UITabBarItem(title: "My Events", image: image2, tag: 1)
+        tabTwo.tabBarItem = UITabBarItem(title: "My Events", image: nil, tag: 1)
         
         self.viewControllers = [tabOne, tabTwo]
         // Do any additional setup after loading the view.

@@ -24,6 +24,7 @@ class SignupVC: UIViewController {
         super.viewDidLoad()
         
         view.backgroundColor = Constants.lightBlue
+        
         setupLogo()
         setupSwitchButton()
         setupRegisterButton()
@@ -91,7 +92,7 @@ class SignupVC: UIViewController {
                 })
             }
         })
-        self.performSegue(withIdentifier: "fromSToFeedVC", sender: self)
+        self.performSegue(withIdentifier: "fromSignupToTab", sender: self)
 
     }
     
