@@ -19,11 +19,14 @@ extension FeedVC: UITableViewDataSource, UITableViewDelegate {
     {
         
         tableView.separatorStyle = UITableViewCell.SeparatorStyle.none
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "post") as! FeedCell
         for subview in cell.contentView.subviews {
             subview.removeFromSuperview()
         }
+        
         cell.awakeFromNib()
+        
         let postInCell = posts[indexPath.row]
         let imageURL = URL(string: postInCell.imageUrl!)
         let data = try? Data(contentsOf: imageURL!)
@@ -59,7 +62,7 @@ extension FeedVC: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat
     {
-        return 200.0;//Choose your custom row height
+        return 200.0; //Choose your custom row height
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

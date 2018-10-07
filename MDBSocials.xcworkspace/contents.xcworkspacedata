@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MDBSocials.xcodeproj">
+      location = "group:/Users/izzielau/Desktop/MDB/MDBSocials2.0/MDBSocials2.0.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
